@@ -1,0 +1,16 @@
+@Main.API_HostAddress = http://localhost:5201
+
+GET {{Main.API_HostAddress}}/health
+Accept: application/json
+
+###
+
+POST {{Main.API_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "P@ssw0rd"
+}
+
+###
